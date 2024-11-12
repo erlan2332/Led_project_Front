@@ -1,0 +1,317 @@
+.img {
+  background-image: url('./image/ledigital@2x\ 1.jpg');
+  background-size: cover; /* Масштабирование изображения, чтобы оно занимало всю площадь */
+  background-position: top; /* Центрируем изображение */
+  width: 100%; /* Ширина 100% от родительского элемента */
+  height: 80vh; /* Высота на всю высоту окна просмотра (view height) */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative; /* Чтобы вложенные элементы могли позиционироваться относительно .img */
+  z-index: 0; /* Устанавливаем z-index для фона */
+}
+
+.upload-video-form {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.588);
+  position: absolute; /* Позиционируем поверх .img */
+  top: 37%; /* Размещаем по вертикали по центру */
+  left: 30%; /* Размещаем по горизонтали по центру */
+  transform: translate(-50%, -50%); /* Выравниваем по центру */
+  z-index: 1; /* Гарантируем, что форма будет поверх */
+  border-radius: 30px;
+}
+
+.inputName {
+  width: 95%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.inputiimg {
+  width: 95%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.form-group {
+  color: aliceblue;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-group2 {
+  color: aliceblue;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.file-label {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  width: 95%;
+  height: 50px;
+  text-align: left; 
+  color: gray;
+  font-weight: lighter;
+  border-radius: 15px;
+  display: flex;
+  align-items: center; 
+  padding-left: 5px; 
+}
+
+.file-input {
+  display: none;
+}
+
+select {
+  width: 95%;
+  height: 50px;
+  background-color: #FF7700;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  padding-right: 30px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-color: #e65c00;
+  background-color: #e65c00;
+  border: none;
+  outline: none;
+}
+
+.buuttonLoad {
+  all: unset;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  margin-left: 370px;
+  margin-top: 10px;
+  color: #FF7700;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; /* Плавный переход для всех свойств */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.buuttonLoad:hover {
+  color: #ffffff;
+  background-color: #FF7700;
+  transform: translateY(-5px); /* Плавное поднятие кнопки */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Более интенсивная тень на наведении */
+}
+
+
+.gridTempl {
+  display: grid;
+  grid-template-columns: 800px 500px;
+  column-gap: 120px;
+}
+
+
+.videoRec {
+  width: 331px;
+  height: 592px;
+  position: absolute; /* Позиционируем поверх .img */
+  top: 3.5%; /* Размещаем по вертикали по центру */
+  z-index: 1; /* Гарантируем, что форма будет поверх */
+  border-radius: 30px;
+}
+
+.card {
+  width: 331px;
+  height: 290px;
+  background-color: #504B4B;
+  border-radius: 21px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 0; 
+}
+
+.video-title {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.video-title-text {
+  color: #FF7700;
+}
+
+.card-text {
+  color: #f0f0f0;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.card-text-text {
+  color: #FF7700;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #504B4B;
+  margin-top: 40px;
+}
+
+
+.video-list-container {
+  position: absolute;
+  z-index: 1;
+  left: 9%;
+}
+.video-list-item {
+  margin-top: 20px;
+  width: 600px;
+  background-color: #D9D9D9;
+  border-radius: 21px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between; /* Выравниваем текст и кнопку по краям */
+  align-items: center;
+  margin-top: 10px; /* Добавляем немного пространства сверху */
+}
+
+button {
+  height: 40px;
+  width: 140px;
+  padding: 0 20px;
+  border-radius: 8px;
+  background-color: #FF7700;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.list-video {
+  margin-top: 38px;
+  color: #FF7700;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.name-video {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.p-text-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.url-link {
+  color: #333333;
+  word-break: break-all;
+}
+
+.expiry-date {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF7700;
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: 423px 150px;
+}
+
+@media (max-width: 768px) {
+  /* Фон и контейнеры */
+  .img {
+    height: 50vh; /* Уменьшаем высоту фона на мобильных */
+  }
+
+  .upload-video-form {
+    width: 90%;
+    height: auto;
+    top: 20%;
+    left: 50%;
+    padding: 20px;
+  }
+
+  /* Поля ввода и селекторы */
+  .inputName, .inputiimg, .file-label, select {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  /* Кнопка загрузки */
+  .buuttonLoad {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  /* Список видео */
+  .video-list-container {
+    left: 5%;
+    width: 90%;
+  }
+
+  .video-list-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Заголовок и текст видео */
+  .name-video, .expiry-date, .p-text-item {
+    font-size: 18px;
+  }
+
+  /* Сетка */
+  .gridTempl {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
